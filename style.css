@@ -5,6 +5,7 @@
 }
 
 body {
+  min-width: 700px;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -124,77 +125,68 @@ main {
   cursor: pointer;
   font-size: 14px;
   margin-top: 10px;
+  white-space: nowrap;
 }
 
 .search-buttons button:hover {
-  border-color: white;
   background-color: #3c4043;
 }
-/* search bar container 
-.search-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+.languages {
   margin-top: 20px;
+  color: rgb(191, 191, 191);
+  font-size: 14px;
+  text-align: center;
 }
 
-/* search box 
-.search-box {
-  display: flex;
-  align-items: center;
-  background-color: rgb(48, 49, 52);
-  border: 1px solid #5f6368;
-  border-radius: 24px;
-  width: 100%;
-  max-width: 582px;
-  padding: 10px 15px;
-  gap: 10px;
-}
-
-.search-box:hover {
-  background-color: rgb(60, 62, 65);
-  border-color: transparent;
-}
-
-/* input field 
-
-/* icons 
-.search-icon,
-.mic-icon,
-.lens-icon {
-  height: 20px;
-  width: 20px;
-  cursor: pointer;
-}
-
-
-
-/*
-a {
+.languages a {
+  color: #8ab4f8;
   text-decoration: none;
-  color: white;
+  margin: 0 4px;
 }
 
+.languages a:hover {
+  text-decoration: underline;
+}
 
-nav {
-  display: flex;
-  flex-shrink: 0;
-  box-sizing: border-box;
-  height: 60px;
-  display: flex;
-  align-items: center;
+/* footer */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #171717;
   color: rgb(232, 232, 232);
-  padding: 6px;
-  font-size: 15px;
+  font-size: 14px;
+  margin-top: auto;
 }
 
-.nav-left {
-  margin-left: 15px;
+.footer-location {
+  padding: 15px 30px;
+  border-bottom: 1px solid #3c4043;
 }
 
-.nav-right {
-  display: inline-block;
-  flex-grow: 1;
+.footer-buttons {
   display: flex;
-  justify-content: flex-end;
-} */
+  justify-content: space-between;
+  padding: 10px 30px;
+  flex-wrap: nowrap;
+}
+
+.footer-buttons a {
+  color: rgb(232, 232, 232);
+  text-decoration: none;
+  margin: 5px 15px;
+  display: flex;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+
+.footer-buttons a:hover {
+  text-decoration: underline;
+}
+
+.left-footer,
+.right-footer {
+  display: flex;
+  flex-wrap: nowrap;
+}
